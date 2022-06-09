@@ -1,0 +1,10 @@
+(defun FxnMake (name-of-fxn)
+    (format t "We will make fxn of name ~a here." name-of-fxn)
+    (defvar *fxn* `( defun ,name-of-fxn () (format t "~%I am from function ~a ~%" ',name-of-fxn ) ))
+    (terpri)
+    (format t "The fxn var is ~a" *fxn*)
+    (terpri)
+    (eval *fxn*)
+)
+
+(defvar )
